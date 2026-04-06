@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riki Patrel | PHP Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Riki<span>.dev</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Hello, I'm</p>
+                <h1 class="hero-title">Riki Patrel</h1>
+                <p class="hero-description">
+                    A passionate <span class="highlight">PHP Developer</span> crafting robust, scalable, and dynamic web applications. I love turning complex logic into clean code.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Code Animation Block -->
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">index.php</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="code-tag">&lt;?php</span>
+  <span class="code-variable">$developer</span> = <span class="code-keyword">new</span> Developer(<span class="code-string">'Riki Patrel'</span>);
+  
+  <span class="code-variable">$skills</span> = [<span class="code-string">'PHP'</span>, <span class="code-string">'MySQL'</span>, <span class="code-string">'Laravel'</span>];
+  
+  <span class="code-keyword">foreach</span> (<span class="code-variable">$skills</span> <span class="code-keyword">as</span> <span class="code-variable">$skill</span>) {
+      <span class="code-variable">$developer</span>->master(<span class="code-variable">$skill</span>);
+  }
+<span class="code-tag">?&gt;</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-img-container">
+                    <div class="about-img-placeholder">
+                        <!-- Placeholder for actual photo -->
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Backend Developer & PHP Enthusiast</h3>
+                    <p>
+                        Hi, I'm Riki Patrel. My journey in web development started with a curiosity for how websites work, which quickly turned into a deep passion for server-side programming. 
+                    </p>
+                    <p>
+                        I specialize in <strong>PHP</strong> and frameworks like <strong>Laravel</strong>. I enjoy solving logical problems, database management, and building APIs that power modern web applications. Clean code and optimized queries are things I genuinely enjoy.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>10+</h4>
+                            <p>Projects Done</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>PHP</h4>
+                            <p>Main Stack</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>1 Year</h4>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <p class="section-subtitle">Technologies I've been working with</p>
+            
+            <div class="skills-container">
+                <!-- Skill Card 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #4f5b93;">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3>PHP</h3>
+                    <p>Core PHP, OOP, MVC Architecture</p>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #f05340;">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3>Laravel</h3>
+                    <p>Eloquent ORM, Blade, Authentication</p>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #00758f;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Database Design, Queries, Optimization</p>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #f0db4f; color: #323330;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>DOM Manipulation, jQuery, Basic React</p>
+                    <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #e44d26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                    <p>Semantic HTML, Flexbox, Grid</p>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #f05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version Control, GitHub Workflows</p>
+                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Recent <span>Projects</span></h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://source.unsplash.com/600x400/?code,laptop" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store built with Core PHP & MySQL. Includes cart, admin panel, and payment integration.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://source.unsplash.com/600x400/?database,server" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog CMS with Laravel</h3>
+                        <p>A content management system featuring user roles, rich text editing, and RESTful API endpoints.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>Blade</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://source.unsplash.com/600x400/?workspace,computer" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Management System</h3>
+                        <p>CRUD application for managing student records with search, filter, and PDF report generation.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>DOMPDF</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Feel free to reach out if you have a project in mind, a question, or just want to say hello.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>riki.patrel@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Designed & Built by Riki Patrel | 2024</p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
